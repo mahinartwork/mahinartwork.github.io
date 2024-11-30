@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url('assets/first_house/1.tif');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header h1 {
+      font-size: 4.5em;
+      font-weight: bold;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeInUp 2s ease-out forwards;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin-top: 20px;
+      font-style: italic;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeInUp 3s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .portfolio-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px;
+      padding: 20px 0;
+    }
+
+    .portfolio-item,
+    .farm-item {
+      position: relative;
+      margin: 10px;
+      overflow: hidden;
+      width: 300px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item img,
+    .farm-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover img,
+    .farm-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .portfolio-item:hover,
+    .farm-item:hover {
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-item a,
+    .farm-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      z-index: 2;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h1>My Art Portfolio</h1>
+      <p>Discover my artistic creations</p>
+    </div>
+  </header>
+
+  <div class="portfolio-container">
+    <div class="portfolio-item">
+      <a href="cozy_kitchen.html">
+        <img src="assets/cozy_kitchen/1.tif" alt="Project 1">
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="donut.html">
+        <img src="assets/donut/1.tif" alt="Project 2">
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="first_house.html">
+        <img src="assets/first_house/1.tif" alt="Project 4">
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="food_truck.html">
+        <img src="assets/food_truck/1.tif" alt="Project 4">
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="mushroom_house.html">
+        <img src="assets/mushroom_house/1.tif" alt="Project 4">
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="telephone_kiosk.html">
+        <img src="assets/telephone_kiosk/1.tif" alt="Project 4">
+      </a>
+    </div>
+    <div class="farm-item">
+      <a href="farm.html">
+        <img src="assets/farm/1.tif" alt="Project 3">
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>
