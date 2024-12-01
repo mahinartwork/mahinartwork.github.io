@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donut - Art Portfolio</title>
+  <title>Farm - Art Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
@@ -74,6 +74,7 @@
       margin: 20px auto;
       display: block;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
     }
 
     .project-gallery {
@@ -171,27 +172,27 @@
   </div>
 
   <!-- Big first image -->
-  <img src="assets/farm/1.webp" alt="Farm Image 1" class="main-image">
+  <img src="assets/farm/1.webp" alt="Farm Image 1" class="main-image" onclick="openLightbox(0)">
 
   <!-- Gallery of smaller images -->
   <div class="project-gallery">
     <div class="project-image" onclick="openLightbox(0)">
-      <img src="assets/farm/1.webp" alt="Farm Image 1" id="image1">
+      <img src="assets/farm/1.webp" alt="Farm Image 1">
     </div>
     <div class="project-image" onclick="openLightbox(1)">
-      <img src="assets/farm/2.webp" alt="Farm Image 2" id="image2">
+      <img src="assets/farm/2.webp" alt="Farm Image 2">
     </div>
     <div class="project-image" onclick="openLightbox(2)">
-      <img src="assets/farm/3.webp" alt="Farm Image 3" id="image3">
+      <img src="assets/farm/3.webp" alt="Farm Image 3">
     </div>
     <div class="project-image" onclick="openLightbox(3)">
-      <img src="assets/farm/4.webp" alt="Farm Image 4" id="image4">
+      <img src="assets/farm/4.webp" alt="Farm Image 4">
     </div>
     <div class="project-image" onclick="openLightbox(4)">
-      <img src="assets/farm/5.webp" alt="Farm Image 5" id="image5">
+      <img src="assets/farm/5.webp" alt="Farm Image 5">
     </div>
     <div class="project-image" onclick="openLightbox(5)">
-      <img src="assets/farm/6.webp" alt="Farm Image 6" id="image6">
+      <img src="assets/farm/6.webp" alt="Farm Image 6">
     </div>
   </div>
 
@@ -212,7 +213,6 @@
       "assets/farm/4.webp",
       "assets/farm/5.webp",
       "assets/farm/6.webp",
-      "assets/farm/7.webp"
     ];
 
     function openLightbox(index) {

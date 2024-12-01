@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donut - Art Portfolio</title>
+  <title>First House - Art Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
@@ -74,6 +74,7 @@
       margin: 20px auto;
       display: block;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
     }
 
     .project-gallery {
@@ -171,12 +172,12 @@
   </div>
 
   <!-- Big first image -->
-  <img src="assets/first_house/1.webp" alt="First House Image 1" class="main-image">
+  <img src="assets/first_house/1.webp" alt="First House Image 1" class="main-image" onclick="openLightbox(0)">
 
   <!-- Gallery of smaller images -->
   <div class="project-gallery">
     <div class="project-image" onclick="openLightbox(0)">
-      <img src="assets/first_house/1.webp" alt="First House Image 1" id="image1">
+      <img src="assets/first_house/1.webp" alt="First House Image 1">
     </div>
   </div>
 
